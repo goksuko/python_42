@@ -1,7 +1,9 @@
-project=module5
-directory=ex04
+#!/bin/bash
+
+project=module7
+directory=ex02
 # name=Point
-sources="parameters.py"
+sources="free_range.py"
 # includes="Animal.hpp Dog.hpp Cat.hpp"
 mkdir $project
 cd $project
@@ -11,7 +13,7 @@ cd $directory
 # cd sources
 touch $sources
 chmod +x $sources
-echo "#!usr/bin/env python3" > $sources
+echo "#!/usr/bin/env python3" > $sources
 echo "" >> $sources
 # cd ..
 # mkdir includes

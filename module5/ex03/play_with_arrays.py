@@ -1,15 +1,14 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
-#!usr/bin/env python3
-
-arr = [1, 2, 3, 4, 5, 42, -100, 0, 99, 1, 5, 0, 99]
-new = []
-
-for n in arr:
-	if n > 5:
-		new.append(n + 2)
-
-
-
+arr = [2, 8, 9, 48, 8, 22, -12, 2]
 print(f"Original array: {arr}")
-print(f"New array: {set(new)}")
+
+new_set = set(arr)
+print(f"Original set: {new_set}")
+
+# res = []
+# for i in new_set:
+# 	if i > 5:
+# 		res.append(i + 2)
+res = [i + 2 for i in new_set if i > 5]
+print(f"New array: {res}")
